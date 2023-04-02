@@ -19,10 +19,10 @@ app.use(bodyParser.json());
 
 require("./routes")(app);
 
-app.use(express.static(__dirname + "/unstopProject"));
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname + "/unstopProject/index.html"));
-});
+// app.use(express.static(__dirname + "/unstopProject"));
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname + "/unstopProject/index.html"));
+// });
 route.get("/", (req, res) => {
   console.log("hit home");
 });
